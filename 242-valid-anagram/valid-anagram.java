@@ -1,11 +1,18 @@
+import java.util.Arrays;
+
 class Solution {
     public boolean isAnagram(String s, String t) {
-        char[] sArray = s.toCharArray();
-        char[] tArray = t.toCharArray();
+        char[] char1 = s.toCharArray();
+        char[] char2 = t.toCharArray();
 
-        Arrays.sort(sArray);
-        Arrays.sort(tArray);
+        Arrays.sort(char1);
+        Arrays.sort(char2);
 
-        return Arrays.equals(sArray, tArray);
+        if(Arrays.equals(char1, char2)){
+            return true;
+        } else {
+            return false;
+        }
+
     }
 }
